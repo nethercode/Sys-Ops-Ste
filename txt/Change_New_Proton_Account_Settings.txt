@@ -1,0 +1,8 @@
+// Settings -> Security and privacy -> Privacy and data collection -> Collect usage diagnostics -> Toggle OFF
+// Settings -> Security and privacy -> Privacy and data collection -> Send crash reports -> Toggle OFF
+// Settings -> Security and privacy -> Security logs -> Wipe
+// Settings -> Security and privacy -> Security logs -> Enable authentication logs -> Toggle OFF
+// Settings -> Dashboard -> Email subscriptions -> Toggle OFF
+// Settings -> Language and time -> Time format -> Change to 24-hour clock
+// Settings -> Recovery -> Data recovery -> Recovery phrase -> Toggle ON -> Download
+// Settings -> Recovery -> Data recovery -> Recovery file -> Download recovery file

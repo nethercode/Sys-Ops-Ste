@@ -1,0 +1,1 @@
+File -> Preferences -> Settings -> Window -> Title Bar Style -> Custom

@@ -7,6 +7,8 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 
 <<COMMENT
 
+$ gh auth login
+
 > GitHub.com
 > SSH
 > Y
@@ -16,14 +18,19 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 -> Generate new token
 -> Scopes = ["repo", "read:org", "admin:public_key"]
 
-git config --global user.name "datashroud"
-git config --global user.email "free-software-user@proton.me"
+git config --global user.name "Username"
+git config --global user.email "user@example.com"
 git config -l
 
 git clone git@github.com:Username/Repository
 cd Repository
-git add .
-git commit -m "Create README.md"
+
+*Make some changes to tracked files within the repository*
+( . . . )
+
+git add . && git commit -m "A descriptive commit message goes here"
+-OR-
+git commit -am "A descriptive commit message goes here"
 git push
 
 COMMENT

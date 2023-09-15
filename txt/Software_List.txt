@@ -1,0 +1,10 @@
+VLC
+KeePassXC
+BitWarden
+Wireshark
+Etcher
+Postman
+VirtualBox
+VSCode
+VSCodium
+Chrome
