@@ -6,26 +6,34 @@
 ###### H6
 
 **Bold**
+
 __Bold__
 
 *Italics*
+
 _Italics_
 
 ***Bold and Italics***
 
 <u>Underline</u>
 
-> Block Quote
-
 Horizontal Line
 ***
 
-![Image](Path)
+<br> Break
 
-[Link](URL)
+> Block Quote
 
 1. Ordered
 2. List
+
+- Unordered
+- List
+    - Sublist
+
+* Unordered
+* List
+    * Sublist
 
 ~~Strikethrough~~
 
@@ -35,3 +43,7 @@ Horizontal Line
 Code
 Block
 ```
+
+![Image](Path)
+
+[Link](URL)

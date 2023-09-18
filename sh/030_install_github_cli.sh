@@ -1,3 +1,4 @@
+#!/bin/bash
 type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
 && sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
@@ -12,11 +13,12 @@ $ gh auth login
 > GitHub.com
 > SSH
 > Y
+> No Passphrase
 > gh_cli_ssh_key_yyyymmdd
 > Paste an authentication token 
--> https://github.com/settings/tokens
--> Generate new token
--> Scopes = ["repo", "read:org", "admin:public_key"]
+    -> https://github.com/settings/tokens
+    -> Generate new token
+    -> Scopes = ["repo", "read:org", "admin:public_key"]
 
 git config --global user.name "Username"
 git config --global user.email "user@example.com"
@@ -28,9 +30,9 @@ cd Repository
 *Make some changes to tracked files within the repository*
 ( . . . )
 
-git add . && git commit -m "A descriptive commit message goes here"
+git add . && git commit -m "Commit message goes here"
 -OR-
-git commit -am "A descriptive commit message goes here"
+git commit -am "Commit message goes here"
 git push
 
 COMMENT
