@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo apt update && sudo apt upgrade -y
+
+<<ROOT
 if test $(whoami) != root
 then
 	echo "This script must be run as root, or else."
@@ -7,6 +10,9 @@ then
 fi
 
 read -p "Enter username to grant sudo access: " username
+ROOT
+
+username=$(whoami)
 
 if [ -z "$username" ]; then
   echo "Username cannot be empty. Exiting."
@@ -20,7 +26,8 @@ if [ -e "$sudo_file" ]; then
   exit 1
 fi
 
-echo "$username ALL=(ALL:ALL) NOPASSWD: ALL" >> "$sudo_file"
+echo "$username ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee "$sudo_file"
 
 chown root:root "$sudo_file"
 chmod 0440 "$sudo_file"
+
