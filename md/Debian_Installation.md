@@ -38,9 +38,9 @@ As the first (and currently, only) method on the list, this section is intended 
 ### 1. Prerequisites
 The following list items and steps must be fulfilled prior to being able to begin the installation process.
 - Create installation media
-    - Balena's [Etcher](https://github.com/balena-io/etcher/releases/)
+    - Balena's [Etcher](https://github.com/balena-io/etcher/releases/), or similar software.
     - Debian [ISO](https://www.debian.org/distrib/) file
-    - [USB flash drive](https://en.wikipedia.org/wiki/USB_flash_drive)
+    - An X+ GB [USB flash drive](https://en.wikipedia.org/wiki/USB_flash_drive)
 - Boot to system BIOS or UEFI menu
 - Select 'UEFI: USB DISK 3.0 PMAP' (or similar 'UEFI' boot option)
 
@@ -1074,38 +1074,91 @@ __Please choose `<Continue>` to reboot.__
 
 
 
+## Debian Install (Simple)
 ```
-Debian Install (Simple)
+01a PREQUISITES
 
-01 Installer Menu: Graphical Install
-02 System Language: English
-03 System Location: United States
-04 Keyboard Keymap: American English
-00 Media Loader: LOADING_BAR
-05 Network Interface: <SELECT_NETWORK_INTERFACE>
-06 Hostname: <ENTER_HOSTNAME>
-07 Domain: <blank>
-08 Root Password: <ENTER_ROOT_PASSWORD>
-09 Full Name: <ENTER_FULL_NAME>
-10 Username: <ENTER_USERNAME>
-11 User Password: <ENTER_USER_PASSWORD>
-12 Time Zone: <SELECT_TIME_ZONE>
-00 Disk Detection: LOADING_BAR
-13 Partition Method: Guided - Use Entire Disk and Setup LVM
-14 Primary Disk: <SELECT_DISK>
-15 Disk Scheme: Separate /home, /var/, /tmp Partitions
-16 Confirm Partition: Yes
-00 Partition Amount: <ENTER_PERCENTAGE>
-17 Write Changes: Yes
-00 Install Base System: LOADING_BAR
-18 Package Manager Mirror Country: United States
-19 Archive Mirror: deb.debian.org
-20 Proxy: blank
-21 Popularity Contest: no
-22 ["Debian Desktop Environment", "Xfce", "Web Server", "SSH Server", "Standard System Utilities"]
-00 Install Software: LOADING_BAR
-23 Finish Install: (REBOOT) && <REMOVE_MEDIA>
+02a SYSTEM BIOS/UEFI INTERFACE:
+    Open 'Save & Exit' tab
+    Navigate to "Boot Override" menu
+    Find "UEFI: USB DISK 3.0 PMAP" option
+    Double-click action
 
+03a WAIT
+
+04a UEFI INSTALLER: 
+    Select "Graphical Install" option
+    Press "Enter"/"Return" Key
+
+05a SELECT A LANGUAGE:
+    Select "English - English" Option
+    Click <Continue> button
+
+06a SELECT YOUR LOCATION:
+    Select "United States" option
+    Click <Continue> button
+
+07a CONFIGURE THE KEYBOARD:
+    Select "American English" option
+    Click <Continue> button
+
+08a DETECT AND MOUNT INSTALLATION MEDIA (Loading Bar)
+09a LOAD INSTALLER COMPONENTS FROM INSTALLATION MEDIA (Loading Bar)
+10a DETECT NETWORK HARDWARE (Loading Bar)
+
+11a CONFIGURE THE NETWORK (Loading Bar)
+
+12a CONFIGURE THE NETWORK (Network Interface): <SELECT_NETWORK_INTERFACE>
+
+13a CONFIGURE THE NETWORK (Hostname): <ENTER_HOSTNAME> ("debian-desktop)
+14a CONFIGURE THE NETWORK (Domain name): *blank*
+
+15a SET UP USERS AND PASSWORDS (Root password): *blank* -> <Continue> button
+16a SET UP USERS AND PASSWORDS (Full name): <ENTER_FULL_NAME> ("User") -> <Continue> button
+17a SET UP USERS AND PASSWORDS (Username): <ENTER_USERNAME> ("user") -> <Continue> button
+18a SET UP USERS AND PASSWORDS (User password): <ENTER_USER_PASSWORD> -> <Continue> button
+
+19a CONFIGURE THE CLOCK (Loading Bar)
+20a CONFIGURE THE CLOCK (Time zone): 'Central' option -> <Continue> button
+
+21a DETECT DISKS (Loading Bar)
+22a PARTITION DISKS (Loading Bar)
+23a PARTITION DISKS (Partitioning method): 'Guided - use entire disk and set up LVM' option -> <Continue> button
+24a PARTITION DISKS (Select disk): '/dev/nvme0n1 - 512.1 GB INTEL SSDPEKNU512GZ' option -> <Continue> button
+25a PARTITION DISKS (Partitioning scheme): 'Separate /home, /var, and /tmp partitions' option -> <Continue> button
+26a PARTITION DISKS (Remove existing LV data): 'Yes' option -> <Continue> button
+27a PARTITION DISKS (Loading Bar)
+28a PARTITION DISKS (Write the changes and configure): 'Yes' option -> 'Continue' button
+29a PARTITION DISKS (Loading Bar)
+30a PARTITION DISKS (Amount of volume group): Enter '50%' -> <Continue> button
+31a PARTITION DISKS (Loading Bar)
+32a PARTITION DISKS (Confirm to write changes): 'Yes' option -> <Continue> button
+33a PARTITION DISKS (Loading Bar)
+
+34a INSTALL THE BASE SYSTEM (Loading Bar)
+
+35a CONFIGURE THE PACKAGE MANAGER (Mirror country): 'United States' option -> <Continue> button
+36a CONFIGURE THE PACKAGE MANAGER (Archive mirror): 'deb.debian.org' option -> <Continue> button
+37a CONFIGURE THE PACKAGE MANAGER (Proxy): *blank*
+
+38a CONFIGURE THE PACKAGE MANAGER (Loading Bar)
+39a SELECT AND INSTALL SOFTWARE (Loading Bar)
+
+40a CONFIGURING POPULARITY-CONTEST: 'No' option -> <Continue> button
+
+41a SELECT AND INSTALL SOFTWARE (Loading Bar)
+
+42a SOFTWARE SELECTION: ["Debian Desktop Environment", "Xfce", "Standard System Utilities"] options -> <Continue> button
+
+43a SELECT AND INSTALL SOFTWARE (Loading Bar)
+44a INSTALL THE GRUB BOOT LOADER (Loading Bar)
+45a FINISH THE INSTALLATION (Loading Bar)
+
+46a FINISH THE INSTALLATION: Remove installation media -> <Continue> button
+
+47a FINISH THE INSTALLATION (Loading Bar)
+
+```
 01
 'Graphical install'
     -> 'Enter'/'Return' key (Select)
@@ -1202,7 +1255,6 @@ Select Network SSID
 39
 
 40
-```
 
 
 

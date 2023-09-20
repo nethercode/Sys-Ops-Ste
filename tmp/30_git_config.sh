@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<WIP
 # Install Git
 sudo apt install -y git
 
@@ -8,6 +9,7 @@ mkdir -p ~/Projects/Autosetup
 
 # Clone Autosetup repository
 git clone https://github.com/Nethercode/Autosetup ~/Projects/Autosetup
+WIP
 
 # Run commands to setup ~/.gitconfig file
 git config --global user.name "Username"

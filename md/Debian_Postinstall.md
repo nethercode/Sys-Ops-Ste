@@ -1,88 +1,126 @@
-apt update && apt upgrade -y
+Document details steps to follow during configuration of Debian GNU/Linux OS using Xfce.
 
-echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers.d/user
-chown root:root /etc/sudoers.d/user && chmod 0440 /etc/sudoers.d/user
-logout
+### STEP_01: Update and upgrade the system
+```
+sudo apt update && sudo apt upgrade -y
+```
+<br>
 
+### STEP_02: Install Git
+```
 sudo apt install -y git
-git config --global user.email "github-user@hotmail.com"
-git config --global user.name "Nethercode"
-git config --global init.defaultBranch main
+```
+<br>
 
-mkdir -p ~/other/gh
-git clone https://github.com/nethercode/autosetup ~/other/gh
-cd ~/other/gh/autosetup/sh/
+### STEP_03: Prepare a temporary directory
+```
+mkdir -p ~/tmp/autosetup
+```
+<br>
 
-bash 020_install_curl.sh
+### STEP_04: Clone this repository
+```
+git clone https://github.com/Nethercode/Autosetup ~/tmp/autosetup
+```
+<br>
 
-bash 030_install_github_cli.sh
-gh auth login
+### STEP_05: Tweak settings
+```
+mousepad ~/tmp/autosetup/tmp/00_init.txt
+```
+<br>
 
-bash 035_install_vscodium.sh
-sudo shutdown -r now
+### STEP_06: Make sudo passwordless
+```
+bash ~/tmp/autosetup/tmp/10_nopasswd.sh
+```
+<br>
 
-bash 040_install_brave.sh
+### STEP_07: Close and re-open Terminal Emulator
+```
+exit
+```
+> Note (1): Keystroke C-M-t opens a Terminal Emulator instance. <br>
+> Note (2): Running `source ~/.bashrc` *might* work here in place of closing and re-opening.
 
-The following document section details the steps to be followed when
-configuring a new install of the Debian GNU/Linux
-operating system using the Xfce desktop enviroment.
+<br>
 
-# Prepare a directory
-mkdir -p ~/other/gh/ && cd ~/other/gh/
-
-# Become Root
-su -
-
-# Update and upgrade the system
-apt update && apt upgrade -y
-
-# Add a sudoer
-echo "$username ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers.d/$username
-chown root:root /etc/sudoers.d/$username
-chmod 0440 /etc/sudoers.d/$username
-logout
-
-# Install Brave
-sudo apt install curl
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update
-sudo apt install -y brave-browser
-
-# Install GitHub CLI
-type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
-curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
-&& sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
-&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
-&& sudo apt update \
-&& sudo apt install gh -y
-
-# Setup GitHub CLI
-gh auth login
-"GitHub.com"
-"SSH"
-"Y" (Yes)
-<blank>
-"SSH_Key_GitHub_CLI_DYYYYMMDDTHHMMSSZ"
-"Paste an authentication token"
-	> Visit "https://github.com/settings/tokens"
-	> Click "Generate new token" button
-	> Select "Generate new token (classic)" option
-		> Note: SSH_Key_GitHub_CLI_DYYYYMMDDTHHMMSSZ
-		> Expiration: Custom...
-			> 1 Year
-		> Scopes: ["repo", "read:org", "admin:public_key"]
-		> Click "Generate token" button
-		> Copy the token
-	> Paste the token
+### STEP_08: Configure Git
+```
 git config --global user.name "Username"
-git config --global user.email "email-address@example.com"
-git clone git@github.com:Username/Repository.git
+git config --global user.email "user@example.com"
+git config --global init.defaultBranch main
+```
+<br>
 
+### STEP_09: Install cURL
+```
+bash ~/tmp/autosetup/tmp/install_curl.sh
+```
+<br>
 
+### STEP_10: Install GitHub CLI
+```
+bash ~/tmp/autosetup/tmp/50_gh.sh
+```
+<br>
 
+### STEP_11: Setup GitHub authentication
+```
+gh auth login
+```
+- GitHub.com
+- SSH
+- Y
+- *blank* (No Passphrase)
+- gh_auth_login_ssh_key_YYYY-MM-DDTHH:MM:SSZ (A description and ISO 8601 time stamp)
+- Paste an authentication token
+	- https://github.com/settings/tokens
+	- Generate new token
+	- Scopes = ["repo", "read:org", "admin:public_key"]
 
+<br>
 
+### STEP_12: Copy configuration files to local machine
+```
+bash ~/tmp/autosetup/tmp/60_configs.sh
+```
+<br>
 
+### STEP_13: Edit ~/.bashrc file and run `source ~/.bashrc`
+For more details:
+```
+cat 65_manual.txt
+```
+<br>
 
+### STEP_14: Install VSCodium
+```
+bash ~/tmp/autosetup/tmp/80_codium.sh
+```
+<br>
 
+### STEP_15: Install an internet browser
+```
+bash ~/tmp/autosetup/tmp/90_browser.sh
+```
+<br>
+
+### STEP_16: Restart the System
+```
+sudo shutdown -r now
+```
+<br>
+
+### STEP_17: Setup internet browser(s)
+For more details:
+```
+cat 95_manual.txt
+```
+<br>
+
+### STEP_18: Delete this repository
+```
+bash ~/tmp/autosetup/tmp/99_del.sh
+```
+<br>

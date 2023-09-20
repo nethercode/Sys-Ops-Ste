@@ -1,16 +1,14 @@
 #!/bin/bash
 
+# Set username variable as the output of the whoami command
 username=$(whoami)
 
-if [ -z "$username" ]; then
-  echo "Username cannot be empty. Exiting."
-  exit 1
-fi
-
+# Use username variable to specify sudoer file location
 sudoer_file="/etc/sudoers.d/$username"
 
+# Stop the script if a file already occupies the target location
 if [ -e "$sudo_file" ]; then
-  echo "Sudoers file for $username already exists."
+  echo "Sudoers file for $username already exists at $sudoer_file."
   exit 1
 fi
 

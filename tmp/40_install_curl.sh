@@ -1,4 +1,5 @@
 #!/bin/bash
 
-# Install cURL (if applicable)
+# Install cURL
+sudo apt update
 sudo apt install -y curl
