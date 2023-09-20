@@ -1,4 +1,8 @@
+# Post-install Guide for Debian
+__Version 12.1.0 "bookworm" Release__  
 Document details steps to follow during configuration of Debian GNU/Linux OS using Xfce.
+
+<br>
 
 ### STEP_01: Update and upgrade the system
 ```
@@ -119,7 +123,7 @@ cat 95_manual.txt
 ```
 <br>
 
-### STEP_18: Delete this repository
+### STEP_18: Delete local copy of this repository
 ```
 bash ~/tmp/autosetup/tmp/99_del.sh
 ```
