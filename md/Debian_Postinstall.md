@@ -1,41 +1,5 @@
-Applications ->
-	Settings ->
-	Appearance ->
-	Style ->
-	Adwaita-dark
-
-[ For multi-monitor systems: ]
-Applications ->
-	Settings ->
-	Display ->
-	Align
-
-Applications
-	-> Settings
-	-> Workspaces
-	-> Number of Workspaces
-	-> 2
-
-Wi-Fi Networks
-	-> Available networks
-	-> Select SSID
-	-> Enter password
-
-- Set Mousepad as default for .md
-- Set Mousepad as default for .txt
-- Set Mousepad as default for .csv
-
-Firefox
-	-> Sign in -> Sync
-	-> Save to Pocket icon -> Remove from Toolbar
-	-> Import bookmarks... -> Remove from Toolbar
-	-> "Getting Started" bookmark -> Delete Bookmark
-
-Commands:
-
-su -
-
 apt update && apt upgrade -y
+
 echo "user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers.d/user
 chown root:root /etc/sudoers.d/user && chmod 0440 /etc/sudoers.d/user
 logout

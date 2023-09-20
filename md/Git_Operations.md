@@ -23,3 +23,14 @@ git remote add origin git@github.com:Username/*
 git push --set-upstream origin main
 ```
 
+git clone git@github.com:Username/Repository
+cd Repository
+# 
+# *Make some changes to tracked files within the repository*
+# ( . . . )
+# 
+# git add . && git commit -m "Commit message goes here"
+# -OR-
+# git commit -am "Commit message goes here"
+# git push
+

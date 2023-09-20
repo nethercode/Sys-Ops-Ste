@@ -1,0 +1,10 @@
+Run `gh auth login` and perform the following steps:
+	> GitHub.com
+	> SSH
+	> Y
+	> No Passphrase
+	> gh_cli_ssh_key_yyyymmdd
+	> Paste an authentication token
+		> https://github.com/settings/tokens
+		> Generate new token
+		> Scopes = ["repo", "read:org", "admin:public_key"]
