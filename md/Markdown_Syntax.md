@@ -1,9 +1,9 @@
-# H1
-## H2
-### H3
-#### H4
-###### H5
-###### H6
+# Header H1
+## Header H2
+### Header H3
+#### Header H4
+##### Header H5
+###### Header H6
 
 **Bold**
 
@@ -20,7 +20,7 @@ _Italics_
 Horizontal Line
 ***
 
-<br> Break
+Invisible Break <br>
 
 > Block Quote
 
@@ -43,7 +43,7 @@ Horizontal Line
 Code
 Block
 ```
-
+    
 ![Image](Path)
 
 [Link](URL)

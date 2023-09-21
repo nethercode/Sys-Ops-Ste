@@ -7,6 +7,24 @@
     apt remove
     apt purge
     apt autoremove
+
+### APT Installable Packages
+    apache2
+    cmatrix
+    curl
+    fuse
+    git
+    golang
+    hollywood
+    htop
+    keepassxc
+    php
+    neofetch
+    qbittorrent
+    ruby
+    vlc
+    wireshark 
+    xclip
     
 ### Edit APT autoremove config 
     nano /etc/apt/apt.conf.d/01autoremove
@@ -35,18 +53,19 @@ useradd <username>
 passwd <username>
 ```
 
-### Install Nvidia Display Drivers
+### Install Display Drivers
 ```
-$ lspci -nn | egrep -i "3d|display|vga"
-# apt install -y linux-headers-amd64
-# nano /etc/apt/sources.list
+# Nvidia
+lspci -nn | egrep -i "3d|display|vga"
+sudo apt install -y linux-headers-amd64
+sudo nano /etc/apt/sources.list
 /*
 Add ["contrib", "non-free", "non-free-firmware"] components to /etc/apt/sources.list, for example:
 deb http://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware
 */
-# apt update
-# apt install -y nvidia-driver firmware-misc-nonfree
-# reboot
+sudo apt update
+sudo apt install -y nvidia-driver firmware-misc-nonfree
+sudo reboot
 ```
 
 ### Make AppImage Executable

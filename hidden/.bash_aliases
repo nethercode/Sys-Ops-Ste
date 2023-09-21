@@ -12,4 +12,7 @@ alias x='exit'
 alias ch='history -c && history -w'
 alias clearhist='history -c && history -w'
 
+# Example usage: `google weather`
+alias google='fn() { google-chrome "https://www.google.com/search?q=$1";};fn'
+
 alias py='python3'

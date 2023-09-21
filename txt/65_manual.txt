@@ -1,4 +1,0 @@
-Change PS1 variable on Line 60 in ~/.bashrc to:
-	PS1='\w\$ '
-
-Run `source ~/.bashrc`

@@ -1,52 +1,45 @@
-# Installation Guide for Debian
+<!--
+
+This document is a work-in-progress.
+Last confirmed: 2023-09-20T02:00:00Z
+
+-->
+
+# The Big Book of Debian 
 __Version 12.1.0 "bookworm" Release__  
 
 This guide provides a step-by-step overview of my method for Debian installations. Its purpose is to streamline the process of performing fresh installs with consistency and efficiency. By following this document, you can quickly and reliably set up Debian on your system, ensuring a smooth and consistent experience every time.  
 
 <br>
+
+## Table of Contents
+- [Installation](#installation)
+    - [Prerequisites](#1-prerequisites)
+    - [Debian GNU/Linux UEFI Install Menu](#2-debian-gnulinux-uefi-install-menu)
+    - More...
+- [Post-Install](#post-install)
+
 <br>
-<br>
 
-
-
-
-
-
-
-
-
-
-
-##  The Standard Install
-### Major points: Graphical install, LVM, Xfce
+##  Installation
+### Major features: Graphical install, LVM, Xfce
 As the first (and currently, only) method on the list, this section is intended to remain as a work-in-progress that is prone to change and it should be assumed that it will evolve over time to match my needs and reflect my level of expertise. Unless I fail to update this document, consider it likely reflects what I'm *actually* using on my PC(s).  
 
 <br>
-<br>
-<br>
-
-
-
-
-
-
-
-
-
-
 
 ### 1. Prerequisites
 The following list items and steps must be fulfilled prior to being able to begin the installation process.
-- Create installation media
-    - Balena's [Etcher](https://github.com/balena-io/etcher/releases/), or similar software.
+- A computer
+- Installation media
+    - Balena's [Etcher](https://github.com/balena-io/etcher/releases/) or similar software
     - Debian [ISO](https://www.debian.org/distrib/) file
-    - An X+ GB [USB flash drive](https://en.wikipedia.org/wiki/USB_flash_drive)
+    - A  [USB flash drive](https://en.wikipedia.org/wiki/USB_flash_drive) of 1 GB or more
 - Boot to system BIOS or UEFI menu
 - Select 'UEFI: USB DISK 3.0 PMAP' (or similar 'UEFI' boot option)
 
 <br>
 
-> Section Note: 
+> Note: 
 
 <br>
 <br>
@@ -101,7 +94,7 @@ E: Edit Selection   C: GRUB Command line
 
 <br>
 
-> Section Note: 
+> Note: 
 
 <br>
 <br>
@@ -126,7 +119,7 @@ __Choose the language to be used for the installation process. The selected lang
 
 <br>
 
-> Section Note: 
+> Note: 
 
 <br>
 <br>
@@ -153,7 +146,7 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 <br>
 
-> Section Note: 
+> Note: 
 
 <br>
 <br>
@@ -176,7 +169,7 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 <br>
 
-> Section Note: 
+> Note: 
 
 <br>
 <br>
@@ -196,7 +189,7 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 <br>
 
-> Section Note: *This takes place automatically.*
+> Note: *This takes place automatically.*
 
 <br>
 <br>
@@ -216,7 +209,7 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 <br>
 
-> Section Note: *This takes place automatically.*
+> Note: *This takes place automatically.*
 
 <br>
 <br>
@@ -236,7 +229,7 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 <br>
 
-> Section Note: *This takes place automatically.*
+> Note: *This takes place automatically.*
 
 <br>
 <br>
@@ -257,7 +250,7 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 <br>
 
-> Section Note: *This takes place automatically.*
+> Note: *This takes place automatically.*
 
 <br>
 <br>
@@ -282,7 +275,7 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 <br>
 
-> Section Note: A loading bar appears, begins, completes, and disappears without the need for user input or intervention.
+> Note: A loading bar appears, begins, completes, and disappears without the need for user input or intervention.
 
 <br>
 <br>
@@ -308,7 +301,7 @@ __The hostname is a single word that identifies your system to the network. If y
 
 <br>
 
-> Section Note: I use 'debian-desktop' or 'debian-laptop' as a hostname.
+> Note: I use 'debian-desktop' or 'debian-laptop' as a hostname.
 
 <br>
 <br>
@@ -333,7 +326,7 @@ __The domain name is the part of your Internet address to the right of your host
 
 <br>
 
-> Section Note: I leave the domain name blank.
+> Note: I leave the domain name blank.
 
 <br>
 <br>
@@ -376,7 +369,7 @@ Please enter the same root password again to verify that you have typed it corre
 
 <br>
 
-> Section Note: Toggle the 'Show Password in Clear' to view the enter password in plain text.
+> Note: Toggle the 'Show Password in Clear' to view the enter password in plain text.
 
 <br>
 <br>
@@ -461,7 +454,7 @@ Please enter the same user password again to verify you have typed it correctly.
 
 <br>
 
-> Section Note: After entering the user account password, a loading bar appears, begins, completes, and disappears without the need for further user input or intervention.*
+> Note: After entering the user account password, a loading bar appears, begins, completes, and disappears without the need for further user input or intervention.*
 
 <br>
 <br>
@@ -485,7 +478,7 @@ __If the desired time zone is not listed, then please go back to the step "Choos
 
 <br>
 
-> Section Note:
+> Note:
 
 <br>
 <br>
@@ -506,7 +499,7 @@ __If the desired time zone is not listed, then please go back to the step "Choos
 
 <br>
 
-Section Note:
+Note:
 
 <br>
 <br>
@@ -539,7 +532,7 @@ __If you choose guided partitioning for an entire disk, you will next be asked w
 
 <br>
 
-> Section Note: 
+> Note: 
 
 <br>
 <br>
@@ -564,7 +557,7 @@ SCSI11 (0,0,0) (sda) - 15.5 GB USB Disk 3.0
 
 <br>
 
-> Section Note: 
+> Note: 
 
 <br>
 <br>
@@ -595,7 +588,7 @@ The disk can be partitioned using one of several different schemes. If you are u
 
 <br>
 
-> Section Note: I choose to separate /home, /var, and /tmp partitions.
+> Note: I choose to separate /home, /var, and /tmp partitions.
 
 <br>
 <br>
@@ -624,7 +617,7 @@ __/dev/nvme0n1__
 
 <br>
 
-> Section Note: 
+> Note: 
 
 <br>
 <br>
@@ -656,7 +649,7 @@ __Note that this will also permanently erase any data currently on the logical v
 
 <br>
 
-> Section Note:
+> Note:
 
 <br>
 <br>
@@ -684,7 +677,7 @@ Hint: "max" can be used as a shortcut to specify the maximum size, or enter a pe
 
 <br>
 
-> Section Note: I typically choose "50%" for my system(s).
+> Note: I typically choose "50%" for my system(s).
 
 <br>
 <br>
@@ -704,7 +697,7 @@ Hint: "max" can be used as a shortcut to specify the maximum size, or enter a pe
 
 <br>
 
-> Section Note:
+> Note:
 
 <br>
 <br>
@@ -745,7 +738,7 @@ __partition #2 of /dev/nvme0n1 as ext2__<br>
 
 <br>
 
-> Section Note:
+> Note:
 
 <br>
 <br>
@@ -765,7 +758,7 @@ __partition #2 of /dev/nvme0n1 as ext2__<br>
 
 <br>
 
-> Section Note: *This takes place automatically.*
+> Note: *This takes place automatically.*
 
 <br>
 <br>
@@ -785,7 +778,7 @@ __partition #2 of /dev/nvme0n1 as ext2__<br>
 
 <br>
 
-> Section Note: *This takes place automatically.*
+> Note: *This takes place automatically.*
 
 <br>
 <br>
@@ -810,7 +803,7 @@ __The goal is to find a mirrror of the Debian archive that is close to you on th
 
 <br>
 
-> Section Note:
+> Note:
 
 <br>
 <br>
@@ -836,7 +829,7 @@ __Usually, deb.debian.org is a good choice.__
 
 <br>
 
-> Section Note:
+> Note:
 
 <br>
 <br>
@@ -863,7 +856,7 @@ __The proxy information should be given in the standard form of "http://[[user][
 
 <br>
 
-> Section Note:
+> Note:
 
 <br>
 <br>
@@ -883,7 +876,7 @@ __The proxy information should be given in the standard form of "http://[[user][
 
 <br>
 
-> Section Note: *This takes place automatically.*
+> Note: *This takes place automatically.*
 
 <br>
 <br>
@@ -903,7 +896,7 @@ __The proxy information should be given in the standard form of "http://[[user][
 
 <br>
 
-> Section Note: *This takes place automatically.*
+> Note: *This takes place automatically.*
 
 <br>
 <br>
@@ -931,7 +924,7 @@ __This choice can be later modified by running "dpkg-reconfigure popularity-cont
 
 <br>
 
-> Section Note:
+> Note:
 
 <br>
 <br>
@@ -953,7 +946,7 @@ __This choice can be later modified by running "dpkg-reconfigure popularity-cont
 
 <br>
 
-> Section Note: *This takes place automatically.*
+> Note: *This takes place automatically.*
 
 <br>
 <br>
@@ -989,7 +982,7 @@ __At the moment, only the core of the system is installed. To tune the system to
 
 <br>
 
-> Section Note:
+> Note:
 
 <br>
 <br>
@@ -1009,7 +1002,7 @@ __At the moment, only the core of the system is installed. To tune the system to
 
 <br>
 
-> Section Note: *This takes place automatically.*
+> Note: *This takes place automatically.*
 
 <br>
 <br>
@@ -1038,7 +1031,7 @@ __Please choose `<Continue>` to reboot.__
 
 <br>
 
-> Section Note:
+> Note:
 
 <br>
 <br>
@@ -1058,7 +1051,7 @@ __Please choose `<Continue>` to reboot.__
 
 <br>
 
-> Section Note: 
+> Note: 
 
 <br>
 <br>
@@ -1324,4 +1317,292 @@ $ neofetch
         CPU:
         GPU:
         Memory:    MiB /      MiB
+```
+
+## Post-Install
+__Version 12.1.0 "bookworm" Release__  
+Document details steps to follow during configuration of Debian GNU/Linux OS using Xfce.
+
+<br>
+
+### STEP_01: Update and upgrade the system
+```
+sudo apt update && sudo apt upgrade -y
+```
+<br>
+
+### STEP_02: Install Git
+```
+sudo apt install -y git
+```
+<br>
+
+### STEP_03: Prepare a temporary directory
+```
+mkdir -p ~/tmp/autosetup
+```
+<br>
+
+### STEP_04: Clone this repository
+```
+git clone https://github.com/Nethercode/Autosetup ~/tmp/autosetup
+```
+<br>
+
+### STEP_05: Tweak settings
+Optional: Skip to [STEP_06](#step_06-make-sudo-passwordless)
+```
+Organize desktop icons alphabetically:
+	[
+		"File System",
+		"Home",
+		"Trash"
+	]
+
+Change appearance to Adwaita-dark:
+	Applications menu
+		-> Settings
+		-> Appearance
+		-> Style
+		-> Set matching Xfwm4 theme if there is one
+		-> Adwaita-dark
+		-> Close
+
+For multi-monitor systems, align displays:
+	Applications menu
+		-> Settings
+		-> Display
+		-> Align
+		-> Apply
+		-> Keep this configuration
+		-> Close
+
+For multi-monitor systems, move panels:
+		-> Right click
+		-> Panel
+		-> Panel Preferences...
+			-> Panel 1
+				-> Lock panel
+				-> Click and Drag
+				-> Lock Panel
+			-> Panel 2
+				-> Lock panel
+				-> Click and Drag
+				-> Lock Panel
+
+Change number of workspaces to (2):
+	Applications
+		-> Settings
+		-> Workspaces
+		-> Layout
+		-> Number of Workspaces
+		-> Reduce to 2
+		-> Close
+
+Setup Firefox browsing environment
+	Applications
+		-> Internet
+		-> Firefox ESR
+		-> Sign in
+			-> Verify
+			-> Activate
+		-> Save to Pocket icon
+			-> Remove from Toolbar
+		-> Bookmarks Toolbar
+			-> Always Show
+		-> Import bookmarks...
+			-> Remove from Toolbar
+		-> "Getting Started" bookmark
+			-> Delete Bookmark
+
+If applicable, add wireless network connections
+	Wi-Fi Networks
+		-> Available networks
+		-> Select SSID
+		-> Enter password
+
+Set Mousepad as default for .csv
+Set Mousepad as default for .md
+Set Mousepad as default for .sh
+Set Mousepad as default for .txt
+```
+<br>
+
+### STEP_06: Make sudo passwordless
+```
+bash ~/tmp/autosetup/tmp/10_nopasswd.sh
+```
+<br>
+
+### STEP_07: Close and re-open Terminal Emulator
+```
+exit
+```
+> Note (1): Keystroke C-M-t opens a Terminal Emulator instance. <br>
+> Note (2): Running `source ~/.bashrc` *might* work here in place of closing and re-opening.
+
+<br>
+
+### STEP_08: Configure Git
+```
+git config --global user.name "Username"
+git config --global user.email "user@example.com"
+git config --global init.defaultBranch main
+```
+<br>
+
+### STEP_09: Install cURL
+```
+bash ~/tmp/autosetup/tmp/install_curl.sh
+```
+<br>
+
+### STEP_10: Install GitHub CLI
+```
+bash ~/tmp/autosetup/tmp/50_gh.sh
+```
+<br>
+
+### STEP_11: Setup GitHub authentication
+```
+gh auth login
+```
+- GitHub.com
+- SSH
+- Y
+- *blank* (No Passphrase)
+- gh_auth_login_ssh_key_YYYY-MM-DDTHH:MM:SSZ (A description and ISO 8601 time stamp)
+- Paste an authentication token
+	- https://github.com/settings/tokens
+	- Generate new token
+	- Scopes = ["repo", "read:org", "admin:public_key"]
+
+<br>
+
+### STEP_12: Copy configuration files to local machine
+```
+bash ~/tmp/autosetup/tmp/60_configs.sh
+```
+<br>
+
+### STEP_13: Edit ~/.bashrc file and run `source ~/.bashrc`
+```
+nano ~/.bashrc
+```
+Change PS1 variable on Line 60 in ~/.bashrc as follows: `PS1='\w\$ '`
+```
+source ~/.bashrc
+```
+<br>
+
+### STEP_14: Install VSCodium
+```
+bash ~/tmp/autosetup/tmp/80_codium.sh
+```
+<br>
+
+### STEP_15: Install an internet browser
+```
+bash ~/tmp/autosetup/tmp/90_browser.sh
+```
+<br>
+
+### STEP_16: Restart the System
+```
+sudo shutdown -r now
+```
+<br>
+
+### STEP_17: Delete local copy of this repository
+```
+bash ~/tmp/autosetup/tmp/99_del.sh
+```
+<br>
+
+### STEP_18: Setup internet browser(s)
+```
+Brave
+	1. Default browser prompt
+		-> Skip (Do not set Brave as default browser)
+	1b. Import Settings prompt
+		-> Skip
+	2. Dark mode
+	3. Uncheck "Send diagnostic reports if you experience a crash or freeze."
+	4. Uncheck "Share completely private and anonymous product insights about what features are being used by Brave's users."
+	5. Finish
+	6. Hide Brave Rewards icon
+	7. Hide Brave Wallet icon
+	8. Select No Thanks for Brave News
+	9. Customize -> Background Image -> Show Sponsored Images -> Toggle OFF
+	10. Customize -> Brave Stats -> Show Brave Stats -> Toggle OFF
+	11. Customize -> Top Sites -> Top Sites -> Toggle OFF
+	12. Customize -> Clock -> Format -> 24-hour clock
+	13. Customize -> Cards -> Cards -> Toggle OFF
+	14. Customize -> Cards -> Brave Talk -> Hide
+	15. Customize -> Cards -> Brave Rewards -> Hide
+	16. Menu (Customize and control Brave) -> Settings -> Appearance -> Show home button -> Toggle ON
+	17. Menu (Customize and control Brave) -> Settings -> Extensions -> Webstore
+	18. Add extensions: ["Dark Reader", "Enhancer for YouTube", "I still don't care about cookies", "SponsorBlock for YouTube", "uBlock Origin"]
+
+Chrome
+	1. Uncheck boxes for "Make default browser" and "Automatically send usage statistics and crash reports to Google" options
+	2. (If applicable)"Already a Chrome user? Sign in"
+	3. Email or Phone -> Password -> Log in
+	4. "Turn on sync" alert/prompt -> "Yes, I'm in"
+	5. Wait for operations to complete
+	6. "Set Chrome as your default browser" page -> "Skip"
+
+Vivaldi
+	1.
+```
+<br>
+
+### STEP_19: Create `~/AppImages` directory
+```
+mkdir ~/AppImages
+```
+<br>
+
+### STEP_20: Install FUSE (Filesystem in Userspace)
+```
+sudo apt install -y fuse
+```
+<br>
+
+### STEP_21: Download Bitwarden AppImage
+- Bitwarden's Download [Page](https://bitwarden.com/download/)
+- Direct Download [Link](https://vault.bitwarden.com/download/?app=desktop&platform=linux)
+
+Using curl ("cURL" or "client URL"):
+```
+curl -L -o ~/AppImages/Bitwarden-Desktop.AppImage "https://vault.bitwarden.com/download/?app=desktop&platform=linux"
+```
+- `-L`: Follow redirects if the URL redirects to another location.
+- `-o Bitwarden-Desktop.AppImage`: Save the downloaded file with the specified name (Bitwarden-Desktop.AppImage in this case).
+- The URL is enclosed in double quotes.
+
+Using wget ("Wget" or "Web Get"):
+```
+wget "https://vault.bitwarden.com/download/?app=desktop&platform=linux" -O ~/AppImages/Bitwarden-Desktop.AppImage
+```
+- `-O Bitwarden-Desktop.AppImage`: Save the downloaded file with the specified name (Bitwarden-Desktop.AppImage in this case).
+- The URL is enclosed in double quotes.
+<br>
+
+### STEP_22: Set execute permissions for Bitwarden AppImage
+```
+chmod a+x ~/AppImages/Bitwarden-Desktop.AppImage
+```
+<br>
+
+### STEP_23: Install `nautilus` to enable Android device mounting for data transfer
+
+```
+sudo apt install -y nautilus
+
+```
+*The `gvfs` package may also be required. Untested at time of writing.*
+Optional: Install `gnome-disk-utility`
+```
+sudo apt install -y gnome-disk-utility
 ```
