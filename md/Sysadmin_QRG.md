@@ -30,22 +30,33 @@
     nano /etc/apt/apt.conf.d/01autoremove
 
 ### Bash Hotkeys
-    ctrl-a: move to beginning of line
-    ctrl-e: move to end of line
+    ctrl-a: move cursor to beginning of line
+    ctrl-e: move cursor to end of line
 
     ctrl-u: delete everything before the cursor
     ctrl-k: delete everything past the cursor
-    ctrl-w: delete word before the cursor
+    ctrl-w: delete word left of cursor
     ctrl-y: paste most recently deleted text
 
-    ctrl-d: hacky way to delete input, end input, exit current shell
+    ctrl-c: interrupt
+    ctrl-d: send EOF character (delete, end input, or close shell)
     ctrl-l: clear the screen while preserving ability to scroll up
 
-    ctrl-r: search command history
+    ctrl-r: search command history interactively
     ctrl-g: abort the current search
-
+    
+    Ctrl + S: Pause terminal output
+    Ctrl + Q to resume
+    
     alt-left: move left one word
     alt-right: move right one word
+
+    Up Arrow: Cycle through previously executed commands in history (in reverse order).
+    Down Arrow: Cycle through previously executed commands in history (in chronological order).
+
+    Alt + . (period): Insert the last argument from the previous command.
+    Ctrl + T: Swap the current character with the previous character (useful for correcting typos).
+    Tab: Auto-complete filenames, commands, and directory names. Press Tab twice to see a list of available options if there's ambiguity.
 
 ### Create a New User
 ```
