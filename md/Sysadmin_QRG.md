@@ -22,6 +22,8 @@
     neofetch
     qbittorrent
     ruby
+    screen
+    vim
     vlc
     wireshark 
     xclip

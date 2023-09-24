@@ -1,7 +1,7 @@
 <!--
 
 This document is a work-in-progress.
-Last confirmed: 2023-09-20T02:00:00Z
+Last confirmed: 2023-09-22T21:30:00Z
 
 -->
 
@@ -41,17 +41,11 @@ The following list items and steps must be fulfilled prior to being able to begi
 
 > Note: 
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -96,17 +90,11 @@ E: Edit Selection   C: GRUB Command line
 
 > Note: 
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -121,17 +109,11 @@ __Choose the language to be used for the installation process. The selected lang
 
 > Note: 
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -154,14 +136,6 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 
 
-
-
-
-
-
-
-
-
 ### 5. Configure the keyboard
 
 <u>*Keymap to use:*</u>
@@ -177,14 +151,6 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 
 
-
-
-
-
-
-
-
-
 ### 6. [INTERSTITIAL] Detect and mount installation media
 
 <br>
@@ -194,14 +160,6 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -217,14 +175,6 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 
 
-
-
-
-
-
-
-
-
 ### 8. [INTERSTITIAL] Detect network hardware
 
 <br>
@@ -237,14 +187,6 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 
 
-
-
-
-
-
-
-
-
 ### 9a. [INTERSTITIAL] Configure the network (Wired Connection)
 *Using Network Cable...*
 
@@ -252,17 +194,11 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 > Note: *This takes place automatically.*
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -277,17 +213,11 @@ __This is a shortlist of locations based on the language you selected. Choose "o
 
 > Note: A loading bar appears, begins, completes, and disappears without the need for user input or intervention.
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -303,17 +233,11 @@ __The hostname is a single word that identifies your system to the network. If y
 
 > Note: I use 'debian-desktop' or 'debian-laptop' as a hostname.
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -328,17 +252,11 @@ __The domain name is the part of your Internet address to the right of your host
 
 > Note: I leave the domain name blank.
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -355,13 +273,7 @@ __Note that you will not be able to see the password as you type it.__
 
 ...
 
-    If a root password is used, it is strongly recommend to use a password with a minimum length of 20 that includes all of the following:
-    Uppercase letters
-    Lowercase letters
-    Non-sequential numbers
-    Special characters
-
-Please enter the same root password again to verify that you have typed it correctly.
+__Please enter the same root password again to verify that you have typed it correctly.__
 
 <u>*Re-enter password to verify*</u>
 
@@ -369,19 +281,19 @@ Please enter the same root password again to verify that you have typed it corre
 
 <br>
 
-> Note: Toggle the 'Show Password in Clear' to view the enter password in plain text.
+> Note: Toggle the 'Show Password in Clear' to view the entered password in plain text.
+- If using a root password:
+    - Minimum length of 20
+    - Uppercase letters
+    - Lowercase letters
+    - Non-sequential numbers
+    - Special characters
+
+
 
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -397,17 +309,11 @@ __Please enter the real name of this user. This information will be used for ins
 
 > I use "User" as a full name.
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -421,17 +327,11 @@ __Select a username for the new account. Your first name is a reasonable choice.
 
 > I use "user" as a username.
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -462,14 +362,6 @@ Please enter the same user password again to verify you have typed it correctly.
 
 
 
-
-
-
-
-
-
-
-
 ### 16. Configure the clock
 __If the desired time zone is not listed, then please go back to the step "Choose language" and select a country that uses the desired time zone (the country where you live or are located).__  
 
@@ -486,14 +378,6 @@ __If the desired time zone is not listed, then please go back to the step "Choos
 
 
 
-
-
-
-
-
-
-
-
 ### 17. [INTERSTITIAL] Detect disks
 *This takes place automatically.*
 
@@ -504,14 +388,6 @@ Note:
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -540,14 +416,6 @@ __If you choose guided partitioning for an entire disk, you will next be asked w
 
 
 
-
-
-
-
-
-
-
-
 ### 19. Partition disks (Select disk to partition)
 __Note that all data on the disk you select will be erased, but not before you have confirmed that you relaly want to make the changes.__  
 
@@ -562,14 +430,6 @@ SCSI11 (0,0,0) (sda) - 15.5 GB USB Disk 3.0
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -596,15 +456,7 @@ The disk can be partitioned using one of several different schemes. If you are u
 
 
 
-
-
-
-
-
-
-
-
-### 21. Partition disks (Confirm to write the changes)
+### 21. Partition disks (Confirm partitioning)
 __Before the Logical Volume Manager can be configured, the current partitioning scheme has to be written to disk. These changes cannot be undone.__
 
 __After the Logical Volume Manager is configured, no additional changes to the partitioning scheme of disks containing physical volumes are allowed during the installation. Please decide if you are satisfied with the current partitioning scheme before continuing.__
@@ -622,14 +474,6 @@ __/dev/nvme0n1__
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -657,14 +501,6 @@ __Note that this will also permanently erase any data currently on the logical v
 
 
 
-
-
-
-
-
-
-
-
 ### 23. Partition disks (Amount of volume group to use)
 You may use the whole volume group for guided partitioning, or part of it. If you use only part of it, or if you add more disks later, then you will be able to grow logical volumes later using the LVM tools, so using a smaller part of the volume group at installation time may offer more flexibility.
 
@@ -685,14 +521,6 @@ Hint: "max" can be used as a shortcut to specify the maximum size, or enter a pe
 
 
 
-
-
-
-
-
-
-
-
 ### 24. LOADING_BAR
 
 <br>
@@ -705,15 +533,7 @@ Hint: "max" can be used as a shortcut to specify the maximum size, or enter a pe
 
 
 
-
-
-
-
-
-
-
-
-### 25. Partition disks (Confirm to write the changes)
+### 25. Partition disks (Confirm disk writing)
 
 __If you continue, the changes listed below will be written to the disks Otherwise, you will be able to make further changes manually.__
 
@@ -746,31 +566,17 @@ __partition #2 of /dev/nvme0n1 as ext2__<br>
 
 
 
-
-
-
-
-
-
-
-
 ### 26. LOADING_BAR
 
 <br>
 
 > Note: *This takes place automatically.*
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -780,17 +586,11 @@ __partition #2 of /dev/nvme0n1 as ext2__<br>
 
 > Note: *This takes place automatically.*
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -805,17 +605,11 @@ __The goal is to find a mirrror of the Debian archive that is close to you on th
 
 > Note:
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -831,17 +625,11 @@ __Usually, deb.debian.org is a good choice.__
 
 > Note:
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -858,17 +646,11 @@ __The proxy information should be given in the standard form of "http://[[user][
 
 > Note:
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -884,14 +666,6 @@ __The proxy information should be given in the standard form of "http://[[user][
 
 
 
-
-
-
-
-
-
-
-
 ### 32. Select and install software (Loading bar 1/3)
 
 <br>
@@ -901,14 +675,6 @@ __The proxy information should be given in the standard form of "http://[[user][
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -932,14 +698,6 @@ __This choice can be later modified by running "dpkg-reconfigure popularity-cont
 
 
 
-
-
-
-
-
-
-
-
 ### 34. Select and install software (Loading bar 2/3)
 
 *This takes place automatically.*
@@ -948,17 +706,11 @@ __This choice can be later modified by running "dpkg-reconfigure popularity-cont
 
 > Note: *This takes place automatically.*
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -984,17 +736,11 @@ __At the moment, only the core of the system is installed. To tune the system to
 
 > Note:
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -1004,17 +750,11 @@ __At the moment, only the core of the system is installed. To tune the system to
 
 > Note: *This takes place automatically.*
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -1033,17 +773,11 @@ __Please choose `<Continue>` to reboot.__
 
 > Note:
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -1053,17 +787,11 @@ __Please choose `<Continue>` to reboot.__
 
 > Note: 
 
+
+
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
 
 
 
@@ -1102,6 +830,10 @@ __Please choose `<Continue>` to reboot.__
 11a CONFIGURE THE NETWORK (Loading Bar)
 
 12a CONFIGURE THE NETWORK (Network Interface): <SELECT_NETWORK_INTERFACE>
+                                                Cable: Automatic
+                                                Wi-Fi: Select Network SSID
+                                                        -> Enter Network Type
+                                                        -> Enter passphrase
 
 13a CONFIGURE THE NETWORK (Hostname): <ENTER_HOSTNAME> ("debian-desktop)
 14a CONFIGURE THE NETWORK (Domain name): *blank*
@@ -1152,126 +884,8 @@ __Please choose `<Continue>` to reboot.__
 47a FINISH THE INSTALLATION (Loading Bar)
 
 ```
-01
-'Graphical install'
-    -> 'Enter'/'Return' key (Select)
-
-02
-'English - English'
-    -> 'Continue' button || 'Enter'/'Return' key
-
-03
-'American English'
-    -> 'Continue' button || 'Enter'/'Return' key
-
-04
-Automatic
-
-05
-Automatic
-
-06
-Automatic
-
-07
-Cable: Automatic
-Wi-Fi:
-Select Network SSID
-    -> Enter Network Type
-    -> Enter passphrase
-
-'Central'
-    -> 'Continue' button || 'Enter'/'Return' key
-
-08
-
-09
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-28
-
-29
-
-30
-
-31
-
-32
-
-33
-
-34
-
-35
-
-36
-
-37
-
-38
-
-39
-
-40
-
-
-
-
-
-
-
-
-
-
 
 <br>
-<br>
-<br>
-
-
-
-
-
-
-
-
-
-
 
 ```
 # apt install -y neofetch
@@ -1318,6 +932,10 @@ $ neofetch
         GPU:
         Memory:    MiB /      MiB
 ```
+
+<br>
+<br>
+<br>
 
 ## Post-Install
 __Version 12.1.0 "bookworm" Release__  
@@ -1605,4 +1223,9 @@ sudo apt install -y nautilus
 Optional: Install `gnome-disk-utility`
 ```
 sudo apt install -y gnome-disk-utility
+```
+
+### STEP_??: Install `vim` because it's better than `emacs`
+```
+sudo apt install -y vim
 ```
