@@ -1225,7 +1225,7 @@ Optional: Install `gnome-disk-utility`
 sudo apt install -y gnome-disk-utility
 ```
 
-### STEP_??: Install `vim` because it's better than `emacs`
+### STEP_??: Install `vim` at some point because it's better than `emacs`
 ```
 sudo apt install -y vim
 ```

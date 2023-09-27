@@ -138,13 +138,21 @@ efibootmgr -b ____ -B
         -> Recovery file
         -> Download recovery file
 
-### Fix VSCodium miscoloring of title bar in GNOME
+### Fix VSCode/VSCodium miscoloring of title bar in GNOME
     File
         -> Preferences
         -> Settings
         -> Window
         -> Title Bar Style
         -> Custom
+
+### VSCode/VSCodium Tweaks
+    Ctrl + , (Comma) to access Settings
+    "editor.quickSuggestions": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.wordBasedSuggestions": false,
+    "editor.quickSuggestionsDelay": 1000000
+    "editor.parameterHints.enabled": false
 
 ### A list of other useful software
     BitWarden
