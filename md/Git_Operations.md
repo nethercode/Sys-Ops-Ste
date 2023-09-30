@@ -3,6 +3,12 @@
 git clone git@github.com:Username/*
 ```
 
+### View log
+```
+git log # Show full log
+git log -n 3 # Show previous three (3) logs
+```
+
 ### Routine add, commit, and push
 ```
 git add .
