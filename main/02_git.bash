@@ -24,11 +24,3 @@ git config --global init.defaultBranch "$branch"
 
 # Show contents of gitconfig
 cat ~/.gitconfig
-
-# Make directory (with parent) for repository clone
-mkdir -p ~/vsc/stg/
-# vsc = Workspace for VSCode, VSCodium
-# stg = Stage or Staging Area
-
-# Clone setup repository
-git clone https://github.com/Nethercode/Autosetup ~/vsc/stg/autosetup/

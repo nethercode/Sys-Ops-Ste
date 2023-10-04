@@ -1,6 +1,6 @@
 #!/bin/bash
 
 cd ~
-rm -r ~/tmp
-mkdir -p ~/projects/autosetup
-git clone git@github.com:nethercode/autosetup ~/projects/autosetup
+rm -fr ~/tmp
+mkdir -p ~/vsc/stg/sys-ops-ste/
+git clone git@github.com:nethercode/sys-ops-ste ~/vsc/stg/sys-ops-ste/
