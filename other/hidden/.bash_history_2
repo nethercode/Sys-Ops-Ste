@@ -1,0 +1,7 @@
+cd ~/setup/
+bash nopasswd.bash
+bash 02_git.bash
+cat ~/.gitconfig
+bash 03_editor.bash
+bash 04_vivaldi-stable.bash
+sudo shutdown -r now

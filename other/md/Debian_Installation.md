@@ -1,8 +1,6 @@
 <!--
-
 This document is a work-in-progress.
-Last confirmed: 2023-09-22T21:30:00Z
-
+Last updated: 2023-10-04T02:57:00Z
 -->
 
 # The Big Book of Debian 
@@ -1160,7 +1158,7 @@ Brave
 	15. Customize -> Cards -> Brave Rewards -> Hide
 	16. Menu (Customize and control Brave) -> Settings -> Appearance -> Show home button -> Toggle ON
 	17. Menu (Customize and control Brave) -> Settings -> Extensions -> Webstore
-	18. Add extensions: ["Dark Reader", "Enhancer for YouTube", "I still don't care about cookies", "SponsorBlock for YouTube", "uBlock Origin"]
+	18. Add extensions: `Autosetup/md/Browser_Extensions.md`
 
 Chrome
 	1. Uncheck boxes for "Make default browser" and "Automatically send usage statistics and crash reports to Google" options

@@ -9,6 +9,7 @@ alias rd='rmdir'
 
 alias x='exit'
 
+# Clear Bash History
 alias ch='history -c && history -w'
 alias clearhist='history -c && history -w'
 
