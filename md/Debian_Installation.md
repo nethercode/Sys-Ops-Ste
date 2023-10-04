@@ -1094,7 +1094,7 @@ gh auth login
 	- https://github.com/settings/tokens
 	- Generate new token
 	- Scopes = ["repo", "read:org", "admin:public_key"]
-
+SSH key is saved to ~/.ssh/ as id_ed*.pub
 <br>
 
 ### STEP_12: Copy configuration files to local machine
