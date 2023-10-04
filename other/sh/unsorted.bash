@@ -1,9 +1,14 @@
 #!/bin/bash
 
+<<UPDATE
 sudo apt update
-sudo apt install -y curl
+UPDATE
 
-<<GITHUB_CLI
+<<CURL
+sudo apt install -y curl
+CURL
+
+<<GITHUBCLI
 type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
 && sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
@@ -36,7 +41,7 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 # -OR-
 # git commit -am "Commit message goes here"
 # git push
-GITHUB_CLI
+GITHUBCLI
 
 <<VIRTUALBOX
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian bookworm contrib" | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
