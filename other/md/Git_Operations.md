@@ -28,3 +28,15 @@ gh repo create * --public
 git remote add origin git@github.com:Username/*
 git push --set-upstream origin main
 ```
+### Set up new GitHub repository
+```
+mkdir -p ~/vsc/stg/CS50
+cd ~/vsc/stg/CS50
+gh repo create CS50 --public
+git init
+echo "# Harvard CS50" >> README.md
+git add .
+git commit -m "Init"
+git remote add origin git@github.com:Nethercode/CS50
+git push --set-upstream origin main
+```

@@ -1,0 +1,13 @@
+mkdir -p ~/tmp/
+nano ~/tmp/setup_01.bash
+cd ~/tmp/
+bash setup_01.bash
+cd tmp/sys-ops-ste/main/
+ls -1
+bash 01_nopasswd.bash
+bash 02_git.bash
+bash 03_codium.bash 
+bash 04_vivaldi-stable.bash 
+bash 05_gh.bash
+nano 06_reboot.bash
+bash 06_reboot.bash
