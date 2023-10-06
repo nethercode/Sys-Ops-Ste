@@ -15,6 +15,8 @@ _Italics_
 
 ***Bold and Italics***
 
+__*Bold and Italics*__
+
 <u>Underline</u>
 
 Horizontal Line
