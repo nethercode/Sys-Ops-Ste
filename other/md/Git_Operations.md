@@ -38,5 +38,5 @@ echo "# Harvard CS50" >> README.md
 git add .
 git commit -m "Init"
 git remote add origin git@github.com:Nethercode/CS50
-git push --set-upstream origin main
+git push -u origin main
 ```

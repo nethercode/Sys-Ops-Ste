@@ -7,6 +7,8 @@ alias l1='ls -1'
 alias md='mkdir'
 alias rd='rmdir'
 
+alias reload='source ~/.bashrc'
+
 alias x='exit'
 
 # Clear Bash History

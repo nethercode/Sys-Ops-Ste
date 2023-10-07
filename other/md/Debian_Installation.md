@@ -793,7 +793,7 @@ __Please choose `<Continue>` to reboot.__
 
 
 
-## Debian Install (Simple)
+## Debian Install (Simple_1)
 ```
 01a PREQUISITES
 
@@ -882,14 +882,40 @@ __Please choose `<Continue>` to reboot.__
 47a FINISH THE INSTALLATION (Loading Bar)
 
 ```
-
+## Debian Install (Simple_2)
+```
+<>                          Graphical Install
+<>                          English - English
+<>                          United States
+<>                          American English
+<SELECT_NETWORK_INTERFACE>  en*
+<HOSTNAME>                  deb-*
+<DOMAIN_NAME>               *blank*
+<ROOT_PASSWORD>             *blank*
+<FULL_NAME>                 User
+<USERNAME>                  user
+<USER_PASSWORD>             *
+<CLOCK>                     Central
+<>                          Guided + LVM 
+<>                          /dev/*
+<>                          Separate /home, /var, and /tmp
+<>                          Yes
+<>                          max
+<>                          Yes
+<PACKAGE_MANAGER>           United States
+<MIRROR>                    deb.debian.org
+<PROXY>                     *blank*
+<popularity-contest>        No
+<SOFTWARE_SELECTION>        Debian Desktop Environment, Xfce, Standard System Utilities
+<FINISH_INSTALLATION>       Continue
+```
 <br>
 
 ```
 # apt install -y neofetch
 
 $ neofetch
-        user@debian-desktop
+        usr@deb-dt
         -------------------
         OS: Debian GNU/Linux 12 (bookworm) x86_64
         Host: B450 DS3H
@@ -910,7 +936,7 @@ $ neofetch
         Memory: 753MiB / 15386MiB
 
 $ neofetch
-        user@debian-laptop
+        usr@deb-lt
         ------------------
         OS: Debian GNU/Linux 12 (bookworm) x86_64
         Host:
@@ -919,6 +945,27 @@ $ neofetch
         Packages: 1326 (dpkg)
         Shell: bash 5.2.15
         Resolution: 1920x1200
+        DE: Xfce 4.18
+        WM: Xfwm4
+        WM Theme: Default
+        Theme: Xfce [GTK2]
+        Icons: Tango [GTK2]
+        Terminal: xfce4-terminal
+        Terminal Font: Monospace 12
+        CPU:
+        GPU:
+        Memory:    MiB /      MiB
+
+$ neofetch
+        usr@deb-svr
+        ------------------
+        OS: Debian GNU/Linux 12 (bookworm) x86_64
+        Host:
+        Kernel: 6.1.0-12-amd64
+        Uptime:    mins
+        Packages: 1326 (dpkg)
+        Shell: bash 5.2.15
+        Resolution: 1920x1080
         DE: Xfce 4.18
         WM: Xfwm4
         WM Theme: Default
