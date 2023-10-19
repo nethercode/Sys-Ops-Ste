@@ -7,10 +7,10 @@ I accept ( . . . )
 Next
 Custom: Install Windows only
 New partition
-500000 MB
+`*` MB
 Apply
 Ok
-Drive 0 Partition 3
+Drive `*` Partition `*`
 Next
 
 United States
@@ -27,7 +27,7 @@ Yes
 Skip
 I don't have internet
 Continue with limited setup
-Adm
+{username} "Adm"
 {password}
 Location OFF
 Find my device OFF
