@@ -1,16 +1,13 @@
 #!/bin/bash
 
-# Last Verified: 2023-MM-DDTHH:MM:00Z
-# (Needs testing to ensure gpg process is written correctly)
+# Last Verified: 2023-10-03T21:29:00Z
+# <https://itsfoss.com/install-vivaldi-ubuntu-linux/>
+
+# Download the Vivaldi GPG key and store it in the keyring
+wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | gpg --dearmor | sudo dd of=/usr/share/keyrings/vivaldi-browser.gpg
 
 # Add the Vivaldi repository
-echo "deb https://repo.vivaldi.com/archive/deb/ stable main" | sudo tee /etc/apt/sources.list.d/vivaldi.list
-
-# Import the Vivaldi GPG key
-wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub | gpg --dearmor -o /usr/share/keyrings/vivaldi-archive-keyring.gpg
-
-# Set up APT to use the new keyring file
-echo "signed-by=/usr/share/keyrings/vivaldi-archive-keyring.gpg" | sudo tee /etc/apt/sources.list.d/vivaldi.list.save
+echo "deb [signed-by=/usr/share/keyrings/vivaldi-browser.gpg arch=$(dpkg --print-architecture)] https://repo.vivaldi.com/archive/deb/ stable main" | sudo dd of=/etc/apt/sources.list.d/vivaldi-archive.list
 
 # Update your package list
 sudo apt update

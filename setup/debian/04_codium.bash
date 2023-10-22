@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Last Verified: 2023-10-03T20:56:00Z
+# Last Verified: 2023-10-22T15:49:00Z
 
 # Install VSCodium
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \

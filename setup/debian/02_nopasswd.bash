@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Last Verified: 2023-10-03T20:48:00Z
+# Last Verified: 2023-10-22T15:45:00Z
 
 # Set username variable as the output of the whoami command
 username=$(whoami)
@@ -14,7 +14,7 @@ if [ -e "$sudo_file" ]; then
   exit 1
 fi
 
-echo "user ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee -a "$sudoer_file"
+echo "$username ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee -a "$sudoer_file"
 
 sudo chown root:root "$sudoer_file"
 sudo chmod 0440 "$sudoer_file"
