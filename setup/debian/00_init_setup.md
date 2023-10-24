@@ -3,7 +3,7 @@
 
 // *Desktop loads*
 
-// Insert Flash Drive -> Make Mousepad default for these kinds of files:
+// Insert Flash Drive -> Make Mousepad (Xfce) or Text Editor (GNOME) default for these kinds of files:
 // .md
 // .csv
 // .txt
