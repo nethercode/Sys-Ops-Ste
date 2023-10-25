@@ -16,7 +16,7 @@ alias ch='history -c && history -w'
 alias clearhist='history -c && history -w'
 
 # Example usage: `google weather`
-alias google='fn() { vivaldi-stable "https://www.google.com/search?q=$1";};fn'
+alias google='fn() { google-chrome "https://www.google.com/search?q=$1";};fn'
 
 # Change directory to VSCode/VSCodium stage
 alias stg='cd ~/vsc/stg/'
